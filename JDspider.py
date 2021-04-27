@@ -5,27 +5,28 @@ from bs4 import BeautifulSoup
 import csv
 import lxml.html
 
-def get_page(html):
+def get_page(url):
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36'
     }
-    source = requests.get(html, headers=headers).content.decode('UTF-8')
+    source = requests.get(url, headers=headers).content.decode('UTF-8')
     #     print(source)
     selector = lxml.html.fromstring(source)
     return selector
 
 
 def spider(html):
+
     # 排名
     rank_list=[]
     for i in range(10):
         rank_list.append(i+1)
     print(rank_list)
     # 书名
-    name = html.xpath('//div[@class="p-name"]/a/em/text()').extract_first()
+    name = html.xpath('//div[@class="p-name"]/a/em')
     name_list = []
     for item in name:
-        name_list.append(item)
+        name_list.append(''.join(item.xpath('.//text()')).strip())
     print(name_list)
     # 价格
     price = html.xpath('//div[@class="p-price"]/strong/i/text()')
@@ -50,7 +51,7 @@ def spider(html):
     return result_list
 
 def write_file(result_list):
-    with open('Top10.csv', 'w', newline='', encoding='GBK') as f:
+    with open('Top10.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['排名', '书名', '价格', '出版社'])
         writer.writeheader()
         writer.writerows(result_list)
