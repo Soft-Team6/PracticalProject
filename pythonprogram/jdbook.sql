@@ -1,0 +1,10 @@
+INSERT INTO `jdbook` VALUES (1, 'Python编程 从入门到实践 第2版(图灵出品)', 62, '人民邮电出版社');
+INSERT INTO `jdbook` VALUES (2, '精通Python编程两件套：Python编程从入门到实践+Python数据结构与算法分析 第2版（京东套装共2册）', 165, '人民邮电出版社');
+INSERT INTO `jdbook` VALUES (3, 'Python编程三剑客：Python编程从入门到实践第2版+快速上手第2版+极客编程（套装共3册）', 87, '人民邮电出版社');
+INSERT INTO `jdbook` VALUES (4, 'JavaScript高级程序设计 第4版(图灵出品）', 37, '明日科技京东自营旗舰店');
+INSERT INTO `jdbook` VALUES (5, '零基础学Python（编程入门 项目实践 同步视频）（Python3全彩版）', 87, '电子工业出版社');
+INSERT INTO `jdbook` VALUES (6, 'C++ Primer（中文版 第5版）(博文视点出品)', 59, '人民邮电出版社');
+INSERT INTO `jdbook` VALUES (7, 'C++ Primer中文版 第5版+Java编程思想 第4版（京东套装共2册）', 49, '电子工业出版社');
+INSERT INTO `jdbook` VALUES (8, 'C++ Primer Plus 第6版 中文版(异步图书出品)', 79, '机械工业出版社自营官方旗舰店');
+INSERT INTO `jdbook` VALUES (9, '【包邮】labuladong的算法小抄(Python Java C++零基础)(博文视点出品)', 72, '机械工业出版社自营官方旗舰店');
+INSERT INTO `jdbook` VALUES (10, '利用Python进行数据分析（原书第2版）', 54, '人民邮电出版社');
