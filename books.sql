@@ -1,0 +1,10 @@
+INSERT INTO `books` VALUES (1, 'Python', 62, '人民邮电出版社');
+INSERT INTO `books` VALUES (2, '编程', 165, '人民邮电出版社');
+INSERT INTO `books` VALUES (3, ' 从入门到实践 第2版(图灵出品)', 87, '人民邮电出版社');
+INSERT INTO `books` VALUES (4, '精通Python', 37, '明日科技京东自营旗舰店');
+INSERT INTO `books` VALUES (5, '编程', 87, '电子工业出版社');
+INSERT INTO `books` VALUES (6, '两件套：Python', 59, '人民邮电出版社');
+INSERT INTO `books` VALUES (7, '编程', 79, '机械工业出版社自营官方旗舰店');
+INSERT INTO `books` VALUES (8, '从入门到实践+Python数据结构与算法分析 第2版（京东套装共2册）', 79, '机械工业出版社自营官方旗舰店');
+INSERT INTO `books` VALUES (9, 'Python', 72, '机械工业出版社自营官方旗舰店');
+INSERT INTO `books` VALUES (10, '编程', 54, '人民邮电出版社');
