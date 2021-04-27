@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class MainClient {
     public static void main(String[] args) {
-        System.out.println("欢迎使用数据库系统\n1.查看全部数据\n2.搜索数据\n3.删除数据");
         Scanner scanner = new Scanner(System.in);
         String p;       //判断是否继续循环
         do{
+            System.out.println("欢迎使用数据库系统\n1.查看全部数据\n2.搜索数据\n3.删除数据\n");
             System.out.print("请选择功能：");
             String s = scanner.next();
             switch (s) {
@@ -24,7 +24,7 @@ public class MainClient {
                 case "3":
                     AllWay allWay3 = new AllWay();
                     ArrayList<Books> arrayList3 = allWay3.look();
-                    System.out.println("是否删除成功：" + allWay3.delete(arrayList3));
+                    allWay3.delete(arrayList3);
                     break;
                 default:
                     break;
