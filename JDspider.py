@@ -51,7 +51,7 @@ def spider(html):
     return result_list
 
 def write_file(result_list):
-    with open('Top10.csv', 'w', newline='', encoding='GBK') as f:
+    with open('Top10.csv', 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=['排名', '书名', '价格', '出版社'])
         writer.writeheader()
         writer.writerows(result_list)
